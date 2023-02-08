@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cab Price Predictor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 style="text-align:center;">Cab Price Predictor</h1>
+    <br>
+    <br>
+    <br>
+    <div style="text-align:center;">
+        <form action="{{url_for('predict')}}" method="post">
+            <p>Cab Type:
+                <input type="text" name="cab_type" required>
+            </p>
+            <p>Name:
+                <input type="text" name="name" required>
+            </p>
+            <p>Product Id:
+                <input type="text" name="product_id" required>
+            </p>
+            <p>Source:
+                <input type="text" name="source" required>
+            </p>
+            <p>Destination:
+                <input type="text" name="destination" required>
+            </p>
+            <br>
+            <br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
